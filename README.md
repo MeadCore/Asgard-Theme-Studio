@@ -54,7 +54,8 @@ If something gets hard to read, a yellow note appears above the preview with a *
 ![A Studio theme in Asgard](docs/screenshots/in-asgard.png)
 
 > **Which versions?** Full themes (buttons, fonts, textures, pictures and every moving background) need
-> **Asgard 1.3.0 or newer** and **Valhalla 2.2.0 or newer**. Those releases are coming soon. Older versions still load the
+> **[Asgard 1.3.0](https://github.com/MeadCore/Asgard/releases/tag/v1.3.0) or newer** and
+> **[Valhalla 2.2.0](https://github.com/MeadCore/Valhalla/releases/tag/v2.2.0) or newer**. Older versions still load the
 > colors (and Asgard's matrix rain) from a theme.
 
 ## Safe by design

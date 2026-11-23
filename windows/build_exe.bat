@@ -8,7 +8,7 @@ set VER=1.0.0
 if not exist venv py -3.12 -m venv venv || py -3 -m venv venv || exit /b 1
 venv\Scripts\python -m pip install -q --disable-pip-version-check pyinstaller || exit /b 1
 venv\Scripts\python tests\test_theme_check.py || exit /b 1
-venv\Scripts\pyinstaller --noconfirm --clean --onedir --windowed --name "Asgard Theme Studio" --icon windows\studio.ico --contents-directory . ^
+venv\Scripts\python -m PyInstaller --noconfirm --clean --onedir --windowed --name "Asgard Theme Studio" --icon windows\studio.ico --contents-directory . ^
   --version-file windows\version_info.txt ^
   --add-data "static;static" --add-data "themes;themes" --add-data "docs;docs" --add-data "windows\studio.ico;." ^
   --add-data "LICENSE;." --add-data "README.md;." --add-data "CHANGELOG.md;." --add-data "CREDITS.txt;." ^
