@@ -1,0 +1,33 @@
+/* Asgard Theme Studio - Created November 22, 2026 by The_Mead_Maker & Odin.
+   Copyright (c) 2026 The_Mead_Maker & Odin. MIT License, see LICENSE. Keep this notice.
+   The "Pick a starting look" cards. Each is an ordinary v2 theme that people can remix. */
+window.STUDIO_STARTERS = [
+  { id: "gachi", title: "Gachiakuta", blurb: "Grungy graffiti, tilted stickers and tape", emoji: "🗑️",
+    theme: { name: "My Gachiakuta", palette: { bg: "#1b140e", box: "#2a1f15", accent: "#e8261f", accent2: "#ffd400", text: "#f3e9d2" },
+      boxes: { transparency: 8, glow: 10, corners: 4 }, buttons: "sticker", logo: "sticker", font: { headings: "bold", text: "clean" },
+      texture: { kind: "grunge", strength: 70, boxes: true }, background: { effect: "film-grain", density: 35, speed: 40, opacity: 14 } } },
+  { id: "cyber", title: "Cyberpunk", blurb: "Clipped yellow corners that turn cyan", emoji: "🌆",
+    theme: { name: "My Cyberpunk", palette: { bg: "#050505", box: "#0e0e10", accent: "#fcee0a", accent2: "#00f0ff", text: "#f2f2f2" },
+      boxes: { transparency: 10, glow: 30, corners: 0 }, buttons: "clipped", logo: "glitch", font: { headings: "techno", text: "techno" },
+      texture: { kind: "carbon", strength: 35, boxes: false }, background: { effect: "scanlines", density: 50, speed: 35, opacity: 22 } } },
+  { id: "matrix", title: "Matrix", blurb: "Green code raining behind everything", emoji: "🟩",
+    theme: { name: "My Matrix", palette: { bg: "#0d0208", box: "#020d04", accent: "#00ff41", accent2: "#008f11", text: "#7dff9a" },
+      boxes: { transparency: 22, glow: 45, corners: 2 }, buttons: "neon", logo: "neon", font: { headings: "mono", text: "mono" },
+      texture: { kind: "none", strength: 50, boxes: false }, background: { effect: "matrix-rain", density: 70, speed: 55, opacity: 38 } } },
+  { id: "romance", title: "Dark Romance", blurb: "Rose-gold edges, candlelight and serif type", emoji: "🥀",
+    theme: { name: "My Dark Romance", palette: { bg: "#120a0e", box: "#1e1218", accent: "#e8b49a", accent2: "#b76e79", text: "#f4e6e9" },
+      boxes: { transparency: 12, glow: 25, corners: 10 }, buttons: "rose-gold", logo: "gold", font: { headings: "fancy", text: "serif" },
+      texture: { kind: "paper", strength: 45, boxes: false }, background: { effect: "embers", density: 30, speed: 25, opacity: 35 } } },
+  { id: "retro", title: "Retro 80s", blurb: "Hot pink and electric blue neon", emoji: "🕹️",
+    theme: { name: "My Retro 80s", palette: { bg: "#120424", box: "#1d0b3a", accent: "#ff2bd6", accent2: "#00e5ff", text: "#fdf2ff" },
+      boxes: { transparency: 10, glow: 70, corners: 8 }, buttons: "neon", logo: "chrome", font: { headings: "bold", text: "rounded" },
+      texture: { kind: "none", strength: 50, boxes: false }, background: { effect: "scanlines", density: 30, speed: 25, opacity: 18 } } },
+  { id: "viking", title: "Viking", blurb: "Marble and granite, cold sky blue", emoji: "🪓",
+    theme: { name: "My Viking", palette: { bg: "#17130f", box: "#2a241e", accent: "#7fc8e8", accent2: "#c9a25a", text: "#ece6dc" },
+      boxes: { transparency: 0, glow: 15, corners: 6 }, buttons: "plain", logo: "stencil", font: { headings: "serif", text: "clean" },
+      texture: { kind: "marble", strength: 55, boxes: true }, background: { effect: "snow", density: 35, speed: 30, opacity: 40 } } },
+  { id: "blank", title: "Blank", blurb: "Start simple and build your own", emoji: "⬜",
+    theme: { name: "My theme", palette: { bg: "#0b0712", box: "#171024", accent: "#ff3d81", accent2: "#22e1ff" },
+      boxes: { transparency: 0, glow: 40, corners: 12 }, buttons: "plain", logo: "plain", font: { headings: "clean", text: "clean" },
+      texture: { kind: "none", strength: 50, boxes: false }, background: { effect: "none", density: 60, speed: 50, opacity: 30 } } },
+];

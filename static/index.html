@@ -1,0 +1,82 @@
+<!doctype html>
+<!-- Asgard Theme Studio - Created November 22, 2026 by The_Mead_Maker & Odin.
+     Copyright (c) 2026 The_Mead_Maker & Odin. MIT License, see LICENSE. Keep this notice.
+     Make your own look for Asgard and Valhalla. Works offline: every file comes from this app, nothing from the internet. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asgard Theme Studio</title>
+<link rel="icon" href="studio-icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="studio.css">
+<script src="theme-kit.js"></script>
+<script src="starters.js"></script>
+</head>
+<body>
+<header class="bar">
+  <div class="app-name"><img class="app-logo" src="studio-icon.svg" alt="" width="24" height="24"><span>Asgard Theme Studio</span></div>
+  <label class="name-box" title="The name people will see in Asgard's theme list">Theme name
+    <input id="themeName" type="text" maxlength="40" spellcheck="false" autocomplete="off"></label>
+  <div class="bar-group">
+    <button type="button" class="tbtn" id="undoBtn" title="Undo your last change (Ctrl+Z)">↶ Undo</button>
+    <button type="button" class="tbtn" id="redoBtn" title="Bring back what you undid (Ctrl+Y)">↷ Redo</button>
+    <button type="button" class="tbtn fun" id="surpriseBtn" title="Make a random theme. Press again for another.">🎲 Surprise me</button>
+  </div>
+  <div class="bar-group right">
+    <button type="button" class="tbtn" id="startBtn" title="Go back to the starting looks">✨ Starting looks</button>
+    <button type="button" class="tbtn" id="openBtn" title="Open a .asgard-theme file">📂 Open</button>
+    <button type="button" class="tbtn" id="saveBtn" title="Save this theme as a file you can share">💾 Save theme</button>
+    <button type="button" class="tbtn go" id="useBtn" title="Put this theme into Asgard">🚀 Use in Asgard</button>
+    <button type="button" class="tbtn" id="useVBtn" title="How to put this theme into Valhalla">🏠 Use in Valhalla</button>
+    <button type="button" class="tbtn icon" id="helpBtn" title="Help" aria-label="Help">?</button>
+  </div>
+</header>
+
+<main class="work">
+  <aside class="side">
+    <nav class="tabs" role="tablist" aria-label="What to change">
+      <button type="button" role="tab" class="tab on" data-tab="colors" aria-selected="true">🎨<span>Colors</span></button>
+      <button type="button" role="tab" class="tab" data-tab="buttons" aria-selected="false">🏷️<span>Buttons &amp; Labels</span></button>
+      <button type="button" role="tab" class="tab" data-tab="effects" aria-selected="false">✨<span>Background Effects</span></button>
+      <button type="button" role="tab" class="tab" data-tab="textures" aria-selected="false">🧱<span>Textures &amp; Fonts</span></button>
+      <button type="button" role="tab" class="tab" data-tab="pictures" aria-selected="false">🖼️<span>Your Pictures</span></button>
+    </nav>
+    <div class="pane" id="pane" role="tabpanel"></div>
+  </aside>
+  <section class="stage">
+    <div class="stage-bar">
+      <div class="seg" role="radiogroup" aria-label="Preview">
+        <button type="button" class="seg-b on" data-mode="asgard" role="radio" aria-checked="true">Asgard</button>
+        <button type="button" class="seg-b" data-mode="valhalla" role="radio" aria-checked="false">Valhalla</button>
+      </div>
+      <span class="stage-note">Live preview: every change shows up here right away.</span>
+      <label class="switch small" title="Stop the moving background while you work"><input type="checkbox" id="freezeFx"><span></span>Pause motion</label>
+    </div>
+    <div class="warnings" id="warnings" aria-live="polite"></div>
+    <div class="frame-wrap"><iframe id="preview" src="preview.html" title="Preview of your theme" tabindex="-1"></iframe></div>
+  </section>
+</main>
+
+<footer class="foot">
+  <span id="status" aria-live="polite">Ready.</span>
+  <span class="sp"></span>
+  <span class="credit">Created November 22, 2026 by The_Mead_Maker &amp; Odin · <button type="button" class="linkish" id="aboutBtn">About</button></span>
+</footer>
+
+<div class="start hidden" id="start" role="dialog" aria-modal="true" aria-labelledby="startTitle">
+  <div class="start-box">
+    <h1 id="startTitle">Pick a starting look</h1>
+    <p class="lead">Choose the one closest to what you want. You can change everything after.</p>
+    <div class="cards" id="starterCards"></div>
+    <p class="start-foot"><button type="button" class="linkish" id="startOpen">📂 Or open a theme file you already have</button>
+      <button type="button" class="linkish hidden" id="startClose">← Back to my theme</button></p>
+  </div>
+</div>
+
+<div class="modal hidden" id="modal" role="dialog" aria-modal="true"><div class="modal-box" id="modalBox"></div></div>
+<input type="file" id="fileTheme" accept=".asgard-theme,.json,application/json" hidden>
+<input type="file" id="filePic" accept="image/png,image/jpeg,image/webp" hidden>
+<div class="drop-hint hidden" id="dropHint"><div>Drop it here<br><small>a picture (PNG, JPG, WebP) or a .asgard-theme file</small></div></div>
+<script src="studio.js"></script>
+</body>
+</html>

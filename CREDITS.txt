@@ -1,0 +1,7 @@
+Asgard Theme Studio
+Created November 22, 2026 by The_Mead_Maker & Odin.
+Copyright (c) 2026 The_Mead_Maker & Odin. MIT License (see LICENSE).
+
+Idea and design: The_Mead_Maker. Built with Odin.
+Uses only the Python standard library and the browser already on your PC (Brave or Google Chrome if installed).
+Fonts are the ones that come with Windows; nothing is downloaded.

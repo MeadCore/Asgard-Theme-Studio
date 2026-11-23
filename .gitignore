@@ -1,0 +1,19 @@
+# Build output
+venv/
+.venv/
+build/
+dist/
+Output/
+*.spec
+__pycache__/
+*.pyc
+# Test output (made by the tests)
+tests/out/
+tests/cases.json
+# Personal / private: never commit
+private-words.txt
+*.log
+*.bak*
+*backup*
+*.tmp
+config*.json
